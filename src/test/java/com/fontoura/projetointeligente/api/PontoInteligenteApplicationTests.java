@@ -1,4 +1,4 @@
-package com.fontoura.projetointeligente.api.pontointeligente;
+package com.fontoura.projetointeligente.api;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

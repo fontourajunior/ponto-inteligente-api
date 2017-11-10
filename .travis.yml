@@ -1,3 +1,5 @@
 language: java
 rvm:
  - oraclejdk8
+before_install:
+  - chmod +x mvnw
