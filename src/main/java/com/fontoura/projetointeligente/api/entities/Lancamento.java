@@ -65,7 +65,7 @@ public class Lancamento implements Serializable {
         this.descricao = descricao;
     }
 
-    @Column(name = "localizacao", nullable = false)
+    @Column(name = "localizacao", nullable = true)
     public String getLocalizacao() {
         return localizacao;
     }
@@ -125,7 +125,7 @@ public class Lancamento implements Serializable {
 
     @Override
     public String toString() {
-        return "Lancamento[" +
+        return "LancamentoRepository[" +
                 "id=" + id +
                 ", data=" + data +
                 ", descricao='" + descricao + '\'' +
