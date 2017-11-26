@@ -7,7 +7,7 @@ CREATE TABLE `ponto_inteligente`.`empresa` (
   PRIMARY KEY (`id`));
 
 CREATE TABLE `ponto_inteligente`.`funcionario` (
-  `id` BIGINT(20) NOT NULL,
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
   `cpf` VARCHAR(255) NOT NULL,
   `data_atualizacao` DATETIME NOT NULL,
   `data_criacao` DATETIME NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE `ponto_inteligente`.`funcionario` (
   PRIMARY KEY (`id`));
 
 CREATE TABLE `ponto_inteligente`.`lancamento` (
-  `id` BIGINT(20) NOT NULL,
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
   `data` DATETIME NOT NULL,
   `data_atualizacao` DATETIME NOT NULL,
   `data_criacao` DATETIME NOT NULL,

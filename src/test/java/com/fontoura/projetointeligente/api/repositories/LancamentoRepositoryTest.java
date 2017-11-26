@@ -80,7 +80,7 @@ public class LancamentoRepositoryTest {
 
     private Funcionario obterDadosFuncionario(Empresa empresa) throws NoSuchAlgorithmException {
         Funcionario funcionario = new Funcionario();
-        funcionario.setName("Fulan de Tal");
+        funcionario.setNome("Fulan de Tal");
         funcionario.setPerfil(PerfilEnum.RELE_USUARIO);
         funcionario.setSenha(PasswordUtils.gerarBCrypt("123456"));
         funcionario.setCpf("24291173474");

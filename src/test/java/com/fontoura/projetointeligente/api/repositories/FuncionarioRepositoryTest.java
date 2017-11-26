@@ -8,7 +8,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.omg.CORBA.RepositoryIdHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
@@ -69,7 +68,7 @@ public class FuncionarioRepositoryTest {
 
     private Funcionario obterDadosFuncionario(Empresa empresa) throws NoSuchAlgorithmException {
         Funcionario funcionario = new Funcionario();
-        funcionario.setName("Fulano de Tal");
+        funcionario.setNome("Fulano de Tal");
         funcionario.setPerfil(PerfilEnum.ROLE_AMDIN);
         funcionario.setSenha(PasswordUtils.gerarBCrypt("123456"));
         funcionario.setCpf(CPF);

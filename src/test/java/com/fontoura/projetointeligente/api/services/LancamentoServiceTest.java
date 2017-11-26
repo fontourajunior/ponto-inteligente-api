@@ -33,7 +33,6 @@ public class LancamentoServiceTest {
     @Autowired
     private LancamentoService lancamentoService;
 
-
     @Before
     public void setUp() throws Exception {
         BDDMockito.given(this.lancamentoRepository.findByFuncionarioId(Mockito.anyLong(), Mockito.any(PageRequest.class))).
